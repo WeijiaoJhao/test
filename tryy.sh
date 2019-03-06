@@ -1,8 +1,8 @@
 tag=prod-`date +%Y%m%d%H%M`
 echo "start ${tag}!"
-# git checkout develop
-# git pull origin develop
-# git tag -a ${tag} -m ${tag}
+git checkout develop
+git pull origin develop
+git tag -a ${tag} -m ${tag}
 
 SHA1=`git log -1 --pretty=format:"%h"`
 echo "start ${SHA1}!"
